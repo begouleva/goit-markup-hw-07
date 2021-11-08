@@ -1,0 +1,29 @@
+.examples {
+  @extend %list;
+
+  display: flex;
+  margin-right: -30px;
+}
+
+.examples__item {
+  position: relative;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+}
+
+.examples__top-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  padding: 27px 0;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
